@@ -1,0 +1,2 @@
+module ClientPortalApi::CptCodesHelper
+end
