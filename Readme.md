@@ -20,15 +20,13 @@ The project instructions called for passing 2 config variables into the Ember ap
 In app/index.html:
 
 For the dev app to work use these tags (default).
-<pre><code>
-<meta name="widgetClinicianId" value="2" />
-<meta name="widgetApiHost" value="" />
-</code></pre>
+    
+    <meta name="widgetClinicianId" value="2" />
+    <meta name="widgetApiHost" value="" />
 
 Use this tag to set the live api host:
-<pre><code>
-<meta name="widgetApiHost" value="https://johnny-appleseed.clientsecure.me" />
-</code></pre>
+
+    <meta name="widgetApiHost" value="https://johnny-appleseed.clientsecure.me" />
 
 Note setting widgetApiHost to https://johnny-appleseed.clientsecure.me results in CORS errors.
 See app/adapters/application.js for comments describing the missing Access-Control-Allow-Origin header on the api server.
