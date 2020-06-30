@@ -11,7 +11,7 @@ export default class WidgetLocationRoute extends Route {
   }
 
   async model(params) {
-    console.log("location route: params: ", params);
+    // console.log("location route: params: ", params);
 
     this.appointmentRequest.office = null;
     this.appointmentRequest.currentStep = this.appointmentRequest.steps.choose_location;

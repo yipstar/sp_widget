@@ -55,5 +55,10 @@ module.exports = function (environment) {
 
   ENV.GOOGLE_MAPS_API_KEY = "AIzaSyBAEf51QxAS9vSe1GxifP1FgZ7w6gSfOGY";
 
+  // Here's our 2 variables to set outside the app
+  ENV.clinicianId = 2;
+  ENV.api_host = null;
+  // ENV.api_host = "https://johnny-appleseed.clientsecure.me";
+
   return ENV;
 };

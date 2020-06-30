@@ -12,10 +12,6 @@ export default class GoogleMapStaticComponent extends Component {
 
     let address = `${this.args.office.street} ${this.args.office.city} ${this.args.office.state} ${this.args.office.zip}`;
 
-    // address = encodeURIComponent(address);
-
-    // let address = "510 Arizona Ave Santa Monica CA 90401";
-
     let url = `${api}${address}&key=${this.token}`;
 
     return url;
