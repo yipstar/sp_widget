@@ -3,6 +3,8 @@
 ## Setup
 From the repo root
 
+## Test Widget in live api with rails proxy
+
 ### rails api proxy
 - cd api_proxy
 - bundle install
@@ -12,6 +14,15 @@ From the repo root
 - cd scheduling_widget
 - yarn install
 - ember s --proxy http://localhost:3000
+
+## Test Widget using ember-cli-mirage stub
+- cd scheduling_widget
+- in config/environment.js development section set:
+    ENV["ember-cli-mirage"] = {
+        enabled: true,
+    };
+- ember s
+    
 
 Ember config vars:
 
