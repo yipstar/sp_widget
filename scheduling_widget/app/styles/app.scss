@@ -1,0 +1,117 @@
+@import 'node_modules/bulma/bulma';
+
+// strange
+.columns {
+  margin-top: 0;
+}
+
+$light_gray: rgb(248,249, 250);
+$dark_gray: #ddd;
+
+body {
+  background: $light_gray;
+}
+
+.widget-top-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.widget-body-container {
+  background: white;
+}
+
+.widget-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+
+  border-top: 1px solid $dark_gray;
+  border-bottom: 1px solid $dark_gray;
+
+  .title {
+    font-size: 18px;
+  }
+}
+
+.button {
+  font-size: 13px;
+}
+
+.step-index {
+  background-color: #387b9a;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  line-height: 20px;
+  margin-right: 5px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.step-link-text {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 19px;
+  color: #387b9a;
+}
+
+.step-content {
+  font-size: 12px;
+  color: #08c;
+  margin-bottom: 15px;
+  padding-left: 29px;
+  line-height: 21px;
+  
+}
+
+.detail-column, .step-column {
+  padding: 40px;
+}
+
+.service-column {
+  background: $light_gray;
+}
+
+.cpt-code .description {
+  margin-bottom: 15px;
+}
+
+.action-column {
+  text-align: right;
+}
+
+.cpt-code .columns {
+  align-items: center;
+}
+
+.office {
+  border: 2px solid #efefef;
+  background: white;
+}
+
+.office .body .name {
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 6px;
+}
+
+.office .body .address {
+  margin-bottom: 10px;
+}
+
+.office .body {
+  padding: 20px;
+
+  .address, .phone {
+    font-size: 14px;
+    margin-bottom: 20px;
+  } 
+}
+
+.offices .columns .column {
+  display: flex;
+}

@@ -1,0 +1,28 @@
+<div class="column ">
+  <div class="office">
+    <div class="map">
+      <GoogleMapStatic @office={{@office}} />
+    </div>
+
+    <div class="body">
+      <div class="name">
+        {{@office.name}}
+      </div>
+
+      <div class="address">
+        <span>{{@office.street}}</span><br />
+        <span>{{@office.city}}, </span>
+        <span>{{@office.state}}</span>
+        <span>{{@office.zip}}</span>
+      </div>
+
+      <div class="phone">
+        {{@office.phone}}
+      </div>
+
+      <button class="button is-link" type="button" {{on "click" this.selectLocation}}>Select</button>
+
+    </div>
+  </div>
+
+</div>

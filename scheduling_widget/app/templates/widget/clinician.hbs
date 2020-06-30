@@ -1,0 +1,20 @@
+<div class="section">
+  <div class="container">
+    <div class="columns">
+      <div class="column is-one-quarter">
+        <div class="steps-header">
+          <h3 class="title">Clinician</h3>
+
+          <div class="step-content">
+            <div class="clinician-name">
+              {{@model.firstName}} {{@model.lastName}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column is-three-quarters detail-column">
+        {{outlet}}
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="steps">
+
+  <div class="step">
+    <div class="steps-header">
+      <span class="step-index">1</span>
+      <span class="step-link-text">Clinician</span>
+
+      <div class="step-content">
+        <div class="clinician-name">
+          {{this.appointmentRequest.clinician.firstName}}
+          {{this.appointmentRequest.clinician.lastName}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{#if (eq this.appointmentRequest.currentStep this.appointmentRequest.steps.choose_service)}}
+    <div class="step">
+      <div class="steps-header">
+        <span class="step-index">2</span>
+        <span class="step-link-text">Select a Service</span>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if this.appointmentRequest.cptCode }}
+    <div class="step">
+      <div class="steps-header">
+        <span class="step-index">2</span>
+        <span class="step-link-text">Service</span>
+        <div class="step-content">
+          {{this.appointmentRequest.cptCode.description}}<br>
+          {{this.appointmentRequest.cptCode.duration}} minutes<br>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if (eq this.appointmentRequest.currentStep this.appointmentRequest.steps.choose_location)}}
+    <div class="step">
+      <div class="steps-header">
+        <span class="step-index">3</span>
+        <span class="step-link-text">Select a Location</span>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if this.appointmentRequest.office }}
+    <div class="step">
+      <div class="steps-header">
+        <span class="step-index">3</span>
+        <span class="step-link-text">Location</span>
+        <div class="step-content">
+          {{this.appointmentRequest.office.name}}<br>
+
+          <div class="address">
+            <span>{{this.appointmentRequest.office.street}}</span><br />
+            <span>{{this.appointmentRequest.office.city}}, </span>
+            <span>{{this.appointmentRequest.office.state}}</span>
+            <span>{{this.appointmentRequest.office.zip}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/if}}
+
+  {{#if (eq this.appointmentRequest.currentStep 4)}}
+    <div class="step">
+      <div class="steps-header">
+        <span class="step-index">4</span>
+        <span class="step-link-text">Review</span>
+      </div>
+    </div>
+  {{/if}}
+
+
+
+</div>

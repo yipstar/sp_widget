@@ -1,0 +1,19 @@
+<div class="cpt-code box">
+
+  <div class="columns">
+
+    <div class="column">
+      <div class="description">
+        {{@cptCode.description}}
+      </div>
+      <div>
+        {{@cptCode.duration}} minutes
+      </div>
+    </div>
+
+    <div class="column action-column">
+      <button class="button is-link" type="button" {{on "click" (fn this.selectService)}}>Select</button>
+    </div>
+  </div>
+
+</div>
