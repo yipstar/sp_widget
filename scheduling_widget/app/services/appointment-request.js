@@ -6,6 +6,7 @@ export default class AppointmentRequestService extends Service {
     return {
       choose_service: 1,
       choose_location: 2,
+      review: 3,
     };
   }
 

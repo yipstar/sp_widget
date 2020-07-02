@@ -10,7 +10,6 @@ export default class LocationItemComponent extends Component {
   selectLocation() {
     // console.log("selectLocation");
     this.appointmentRequest.office = this.args.office;
-    this.appointmentRequest.currentStep = 4;
     this.router.transitionTo("widget.information");
   }
 }

@@ -64,8 +64,8 @@
     </div>
   {{/if}}
 
-  {{#if (eq this.appointmentRequest.currentStep 4)}}
-    <div class="step">
+  {{#if (eq this.appointmentRequest.currentStep this.appointmentRequest.steps.review)}}
+    <div class="step step4">
       <div class="steps-header">
         <span class="step-index">4</span>
         <span class="step-link-text">Review</span>
