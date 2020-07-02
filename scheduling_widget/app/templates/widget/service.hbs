@@ -1,7 +1,7 @@
 <div class="cpt-codes">
 
   {{#each model as |cptCode|}}
-    <ServiceSelect @cptCode={{cptCode}} />
+    <ServiceSelect @cptCode={{cptCode}} @onSelectService={{this.selectService}} />
   {{/each}}
 
 </div>

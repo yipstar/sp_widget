@@ -20,7 +20,7 @@
         {{@office.phone}}
       </div>
 
-      <button class="button is-link" type="button" {{on "click" this.selectLocation}}>Select</button>
+      <button class="button is-link" type="button" {{on "click" (fn @onSelectLocation @office)}}>Select</button>
 
     </div>
   </div>

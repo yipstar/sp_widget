@@ -2,7 +2,7 @@
 
   <div class="columns">
     {{#each model as |office|}}
-      <LocationItem @office={{office}} />        
+      <LocationItem @office={{office}} @onSelectLocation={{this.selectLocation}} />
     {{/each}}
   </div>
 
